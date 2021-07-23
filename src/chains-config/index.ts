@@ -17,6 +17,7 @@ import { polymeshControllers } from './polymeshControllers';
 import { statemineControllers } from './statemineControllers';
 import { statemintControllers } from './statemintControllers';
 import { westendControllers } from './westendControllers';
+import { logionControllers } from "./logionControllers";
 
 const specToControllerMap = {
 	westend: westendControllers,
@@ -33,6 +34,7 @@ const specToControllerMap = {
 	statemint: statemintControllers,
 	westmine: statemineControllers,
 	westmint: statemintControllers,
+	logion: logionControllers,
 };
 
 /**
