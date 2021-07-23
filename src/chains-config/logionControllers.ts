@@ -1,8 +1,7 @@
 import { ControllerConfig } from '../types/chains-config';
 
 /**
- * Controllers that Sidecar will always default to. This will always be
- * the optimal controller selection for Polkadot and Kusama.
+ * Controllers config for logion
  */
 export const logionControllers: ControllerConfig = {
 	controllers: [
@@ -19,7 +18,6 @@ export const logionControllers: ControllerConfig = {
 		'PalletsAssets',
 		'PalletsStakingProgress',
 		'PalletsStorage',
-		'Paras',
 		'RuntimeCode',
 		'RuntimeMetadata',
 		'RuntimeSpec',
