@@ -1249,7 +1249,7 @@ __metadata:
     "@polkadot/apps-config": 0.94.2-79
     "@polkadot/util-crypto": ^7.0.2
     "@polkadot/x-rxjs": ^6.11.1
-    "@substrate/calc": ^0.2.2
+    "@substrate/calc": "file:./calc/pkg"
     "@substrate/dev": ^0.5.4
     "@types/argparse": ^2.0.8
     "@types/express": ^4.17.12
@@ -1271,10 +1271,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@substrate/calc@npm:^0.2.2":
+"@substrate/calc@file:./calc/pkg::locator=%40substrate%2Fapi-sidecar%40workspace%3A.":
   version: 0.2.2
-  resolution: "@substrate/calc@npm:0.2.2"
-  checksum: 702c86ead17d9199685325edb0ef2a4fed7edd3afda6e3ec04119faa8b8c572c898cf20bc081cedc31b189c450dd671a7565947dbbec480546c7a78dbf09057a
+  resolution: "@substrate/calc@file:./calc/pkg#./calc/pkg::hash=3e3a31&locator=%40substrate%2Fapi-sidecar%40workspace%3A."
+  checksum: 044b4d49f12f124e392b6dc334d21fc6916d4c54496998053ec3909bb1225ed5b8168cd334c7d7d317d87b88216cba0d6e2e5646f2b0e19b4160224f277d6f13
   languageName: node
   linkType: hard
 

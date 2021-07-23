@@ -59,6 +59,8 @@ impl Multiplier {
             ("dock-pos-main-runtime", _) => V2(new_u128(inner)),
             ("dock-pos-test-runtime", _) => V2(new_u128(inner)),
 
+            ("logion", _) => V2(new_u128(inner)),
+
             _ => {
                 info!("Unsupported runtime: {}#{}", spec_name, spec_version);
                 return None;
@@ -150,9 +152,9 @@ impl CalcFee {
     }
 
     pub fn calc_fee(
-        &self, 
-        weight: Weight, 
-        len: u32, 
+        &self,
+        weight: Weight,
+        len: u32,
         extrinsic_base_weight: Weight,
     ) -> String {
         let unadjusted_len_fee = self.per_byte_fee.saturating_mul(len.into());
