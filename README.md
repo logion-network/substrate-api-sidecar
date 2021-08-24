@@ -31,6 +31,7 @@ This service requires Node version 14 or higher.
 
 ## Table of contents
 
+- [Quick startup guide for Logion](#quick-startup-guide-for-logion)
 - [NPM package installation and usage](#npm-package-installation-and-usage)
 - [Source code installation and usage](#source-code-installation-and-usage)
 - [Configuration](#configuration)
@@ -39,6 +40,19 @@ This service requires Node version 14 or higher.
 - [Chain integration guide](./guides/CHAIN_INTEGRATION.md)
 - [Docker](#docker)
 - [Note for maintainers](#note-for-maintainers)
+
+## Quick startup guide for Logion
+In order to start the Logion-specific (with [types](logion-types.json) and port 8081) version of sidecar, run:
+```bash
+yarn start:logion
+```
+
+### Logion Components
+
+* The [Node](https://github.com/logion-network/logion-node) is the implementation of the chain.
+* The [Substrate API Sidecar](https://github.com/logion-network/substrate-api-sidecar) is a REST connector to access the chain.
+* The [Java backend](https://github.com/logion-network/logion-backend) stores data which cannot be exposed publicly, or which wait legal officer's approval.
+* The [Wallet](https://github.com/logion-network/logion-wallet) is the user application.
 
 ## NPM package installation and usage
 

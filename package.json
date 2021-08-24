@@ -3,7 +3,10 @@
   "name": "@substrate/api-sidecar",
   "description": "REST service that makes it easy to interact with blockchain nodes built using Substrate's FRAME framework.",
   "homepage": "https://github.com/paritytech/substrate-api-sidecar#readme",
-  "author": "Parity Technologies <admin@parity.io>",
+  "contributors": [
+    "Parity Technologies <admin@parity.io>",
+    "Logion Team"
+  ],
   "license": "GPL-3.0-or-later",
   "publishConfig": {
     "access": "public",
@@ -14,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paritytech/substrate-api-sidecar.git"
+    "url": "git+https://github.com/logion-network/substrate-api-sidecar.git"
   },
   "engines": {
     "node": ">=14"
@@ -34,6 +37,7 @@
     "lint": "substrate-dev-run-lint",
     "deploy": "yarn build && npm publish",
     "start": "yarn run main",
+    "start:logion": "SAS_SUBSTRATE_TYPES=$PWD/logion-types.json NODE_ENV=logion yarn run main",
     "start:log-rpc": "yarn run build && NODE_ENV=test yarn run main ",
     "dev": "tsc-watch --onSuccess \"yarn run main\"",
     "test": "substrate-exec-jest --silent",
