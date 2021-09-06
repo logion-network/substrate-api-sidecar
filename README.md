@@ -1,3 +1,13 @@
+---
+# ⚠️ DEPRECATED
+
+This project (a fork of [paritytech/substrate-api-sidecar](https://github.com/paritytech/substrate-api-sidecar)) is no longer used by logion network.
+It was previously used to allow the [Java backend](https://github.com/logion-network/logion-backend-java) to connect
+to a node to retrieve info about recovery config and transactions.
+The [Typescript backend](https://github.com/logion-network/logion-backend-ts) now directly connects to a node
+using [`polkadot-js/api`](https://github.com/polkadot-js/api).
+---
+
 
 <br /><br />
 
@@ -51,7 +61,7 @@ yarn start:logion
 
 * The [Node](https://github.com/logion-network/logion-node) is the implementation of the chain.
 * The [Substrate API Sidecar](https://github.com/logion-network/substrate-api-sidecar) is a REST connector to access the chain.
-* The [Java backend](https://github.com/logion-network/logion-backend) stores data which cannot be exposed publicly, or which wait legal officer's approval.
+* The [Java backend](https://github.com/logion-network/logion-backend-java) stores data which cannot be exposed publicly, or which wait legal officer's approval.
 * The [Wallet](https://github.com/logion-network/logion-wallet) is the user application.
 
 ## NPM package installation and usage
